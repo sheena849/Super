@@ -13,11 +13,9 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gray-900 text-white px-6 md:px-16">
-
-
       {/* Image on the Left */}
       <motion.div
-        className="mt-8 md:mt-0 md:mr-16"
+        className="mt-8 md:mt-0 md:mr-16 mb-8 md:mb-0"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
@@ -31,7 +29,7 @@ const Hero = () => {
 
       {/* Text on the Right */}
       <motion.div 
-        className="text-center md:text-left"
+        className="text-center md:text-left mt-6 md:mt-0"
         initial={{ opacity: 0, x: 50 }} 
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
